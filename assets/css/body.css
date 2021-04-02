@@ -1,0 +1,64 @@
+#fondo{
+    background : rgba(255, 255, 255, 0.075);
+    height: 1300px ;
+    width: 1297px;
+    padding: 1em ;
+}
+
+#columna{ 
+    background: #393e46 ;
+    height: 96%;
+    width: 20%;
+    padding: 1em;
+    margin: 0.5em;
+    float: left;
+}
+
+#columna2{ 
+    background: #393e46 ;
+    height: 96%;
+    width: 70%;
+    padding: 1em;
+    margin: 0.5em;
+    float: right;
+}
+
+#dentrocolumna2{
+    background: rgba(255, 255, 255, 0.048) ;
+    height: 15%;
+    width: 93%;
+    border-radius: 0.7em;
+    margin: 1em;
+    padding: 1em;
+}
+.exhibición{
+    background: rgba(255, 255, 255, 0.048) ;
+    height: 20%;
+    width: 93%;
+    border-radius: 0.7em;
+    margin: 1em;
+    padding: 1em;
+}
+.exhibición1{
+    
+    width: 40%;
+    float: left;
+}
+.exhibición2{
+    background-color: #393e46;
+    height: 90%;
+    width: 54%;
+    float: right;
+    margin: 0.5em;
+    padding: 0.5em;
+    border-radius: 0.7em;
+}
+
+.textbox{
+
+    text-align: justify;
+    font: italic;
+    height: 100px;
+    width: 250px;
+}
+
