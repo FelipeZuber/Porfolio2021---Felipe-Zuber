@@ -23,6 +23,8 @@
     float: right;
 }
 
+
+
 #dentrocolumna2{
     background: rgba(255, 255, 255, 0.048) ;
     height: 15%;
@@ -31,6 +33,19 @@
     margin: 1em;
     padding: 1em;
 }
+
+#efecto1{
+    color: #2196f3;
+    height: 80%;
+    width: 1em;
+    line-height: normal;
+}
+#efecto1 hover{
+color: #255784;
+background: #2196f3;
+box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 10px #2196f3;
+}
+
 .exhibición{
     background: rgba(255, 255, 255, 0.048) ;
     height: 20%;
@@ -53,6 +68,16 @@
     padding: 0.5em;
     border-radius: 0.7em;
 }
+
+#botonF{
+    background-color:rgba(0, 255, 255, 0.356);
+    width: 130px;
+    margin: 1em;
+    text-align: center;
+    border-radius: 10px; 
+    border: 2px solid cyan;  
+}
+
 #etiquetas{
     background-color: rgba(238, 154, 123, 0.233);
     width: 130px ;

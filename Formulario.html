@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="assets/css/Body_Formulario.css">
+</head>
+<body bgcolor="222831">
+    <div id="fondo">
+        <div id="columna">
+            <div id="botonF"><a href="index.html">Página Principal:</a>
+            </div>
+            <INPUT TYPE="button" onClick="history.go(0)" VALUE="Refresh">
+        </div>
+        <div id="columna2">
+            <div class="exhibición" style=color:rgba(159,160,160,0.959)>
+                <h2>
+                   Actividades a realizar:
+                </h2>
+                <p>Aqui se observan diversos ejercisios necesarios para aprender a programar dentro de HTML... de la misma forma es una practica para actividades futuras</p>
+
+            </div>
+            <div class="exhibición">
+                <h3 style="color:rgba(240,248,255,0.404);"> Ingrese dos valores para indicar la suma entre ellos:</h3>
+                <p style="color:rgba(240,248,255,0.404);">
+                    <label for="numero1" style="color:rgba(240,248,255,0.404);">Valor 1:</label><input type="number" id="numero1" name="numero1" step="1" oninput="Suma_de_valores()"> <br>
+                    <label for="numero2" >Valor 2:</label><input type="number" id="numero2" name="numero2" step="1" oninput="Suma_de_valores()"> <br><br>
+                    <label for="resultado"> Resultado:</label><input type="number" id="resultado" step="1">
+                </p>
+                <Script type="text/javascript">
+                    function Suma_de_valores() {
+                        try { 
+                            var a = variable= parseInt(document.getElementById("numero1").value)|| 0;
+                                b = variable= parseInt(document.getElementById("numero2").value)|| 0;
+                            document.getElementById("resultado"). value= a + b;
+                        }    catch (e) {} 
+                    } 
+                </Script>
+                <INPUT TYPE="button" onClick="history.go(0)" VALUE="Refresh">
+            </div>
+            <div class="exhibición">
+                <h3 style="color:rgba(240,248,255,0.404);"> Ingrese valores para indicar el mayor y menor número posible:</h3>
+                <p style="color:rgba(240,248,255,0.404);">
+                    <label for="valor1"> Valor 1:   </label><input type="number" id="valor1" name="valor1" step="1" oninput="Resultados()"><br>
+                    <label for="valor2"> Valor 2:   </label><input type="number" id="valor2" name="valor2" step="1" oninput="Resultados()"><br>
+                    <label for="valor3"> Valor 3:   </label><input type="number" id="valor3" name="valor3" step="1" oninput="Resultados()"><br>
+                    <label for="valor4"> Valor 4:   </label><input type="number" id="valor4" name="valor4" step="1" oninput="Resultados()"><br>
+                    <br>
+                    <label for="res"> El número MAYOR es:  </label><input type="number" id="res" name="res" step="1"><br>
+                    <label for="res2"> El número MENOR es:  </label><input type="number" id="res2" name="res2" step="1">                   
+                </p>
+                
+                <Script type="text/javascript">
+                    function Resultados() {
+                    
+                        var valor1 = parseInt(document.getElementById("valor1").value)|| 0;
+                        var valor2 = parseInt(document.getElementById("valor2").value)|| 0;
+                        var valor3 = parseInt(document.getElementById("valor3").value)|| 0;
+                        var valor4 = parseInt(document.getElementById("valor4").value)|| 0;
+                        
+                        var Resultado = 0;
+                        
+                        if((valor1>=valor2) && (valor1>=valor3) && (valor1>=valor4)) 
+                        {   (Resultado = valor1);}
+                        else if ((valor2>=valor1) && (valor2>=valor3) && (valor2>=valor4))
+                        {    (Resultado = valor2);}
+                        else if((valor3>=valor1) && (valor3>=valor2) && (valor3>=valor4))
+                        {    (Resultado = valor3);}
+                        else if((valor4>=valor1) && (valor4>=valor2) && (valor4>=valor3))
+                        {    (Resultado = valor4);}
+                        document.getElementById("res").value = Resultado
+
+                        if((valor1<=valor2) && (valor1<=valor3) && (valor1<=valor4)) 
+                        {   (Resultado = valor1);}
+                        else if ((valor2<=valor1) && (valor2<=valor3) && (valor2<=valor4))
+                        {    (Resultado = valor2);}
+                        else if((valor3<=valor1) && (valor3<=valor2) && (valor3<=valor4))
+                        {    (Resultado = valor3);}
+                        else if((valor4<=valor1) && (valor4<=valor2) && (valor4<=valor3))
+                        {    (Resultado = valor4);}
+                        document.getElementById("res2").value = Resultado
+                    }        
+                        
+                </Script>
+                <INPUT TYPE="button" onClick="history.go(0)" VALUE="Refresh">
+            </div> 
+
+
+            <div class="exhibición">
+                <h3 style="color:rgba(240,248,255,0.404);"> Ingrese una palabra e indique cuantas veces quiere que se repita:</h3>
+                <p style="color:rgba(240,248,255,0.404);">                    
+                    <label for="word">Escriba una palabra</label><input type="text" id="word"/><br>
+                    <label for="repeat">Numero de repeticiones</label><input type="number" id="repeat" min="0"/><br>
+
+                    <button id="btn">Click</button>
+                    <INPUT TYPE="button" onClick="history.go(0)" VALUE="Refresh">
+                    <div style="color:rgba(240,248,255,0.404);" id="container"><p class="parrafo"></p></div>     
+                </p>
+            </div>  
+
+            <div class="exhibición">
+                <h3 style="color:rgba(240,248,255,0.404);"> Ingrese una temperatura para realizar la converción:</h3>
+                <p style="color:rgba(240,248,255,0.404);">
+
+                    Valor Kelvin:   <input type="number" id="Kelvin" name="Kelvin" step="1"/>
+                    Resultado de Kelvin a Celsius:  <input type="number" id="KelACel" name="KelACel" step="1"/><br><br>
+
+
+                    Valor Celsius:   <input type="number" id="Celsius" name="Celsius" step="1"/>
+                    Resultado de Celsius a Kelvin:  <input type="number" id="CelAKel" name="CelAKel" step="1"/><br><br> 
+                    <input type="button" onClick="btnclick1()" value="Click"> 
+                    <INPUT TYPE="button" onClick="history.go(0)" VALUE="Refresh"> 
+                </p>   
+            </div>
+            <div class="exhibición">
+                <h3 style="color:rgba(240,248,255,0.404);"> Ingrese una palabra para saber cuantas letras tiene:</h3>
+                <p style="color:rgba(240,248,255,0.404);">
+                    <input type="text" onkeyup="countChars(this)">  
+                    <p style="color:rgba(240,248,255,0.404);" id="charNum">Letras</p>
+                    <INPUT TYPE="button" onClick="history.go(0)" VALUE="Refresh">
+                </p>   
+            </div>
+            <div class="exhibición">
+                <h3 style="color:rgba(240,248,255,0.404);"> Ingrese numero para saber si es par o no:</h3>
+                <p style="color:rgba(240,248,255,0.404);">
+                    
+                </p>   
+            </div>
+        </div>    
+    </div>
+    <script src="assets/js/body.js"></script> 
+</body>
+
+
+
+
+
+
+
+
